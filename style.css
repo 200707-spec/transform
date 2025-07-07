@@ -1,0 +1,45 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    
+
+    body {
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+
+    /* paramentros de estilização da caixa */
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #c2f800;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      user-select: none;
+      cursor: pointer;
+      
+    }
+
+    /* aumentar o tamanho da caixa em 1.5 do houver  */
+    .box:hover {
+      transform: scale(1.5);
+    }
+
+    /* girar 45 graus a direita */
+    .box:active {
+      transform: translateX(100px) rotate(45deg);
+    }
